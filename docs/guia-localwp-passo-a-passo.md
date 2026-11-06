@@ -262,6 +262,27 @@ do `checklist-publicacao.md`.
 
 ---
 
+## Passo 7 — Layout de tela cheia
+
+Sem este passo, a landing aparece **abaixo** do cabeçalho do tema, com o
+nome do site e o título da página competindo com o H1. Para página de
+conversão isso é ruído: nada deve disputar atenção com a promessa e o
+botão.
+
+Ainda no editor do Elementor:
+
+- [ ] Clique no ícone de **engrenagem** no canto inferior esquerdo
+      (**Configurações da página**)
+- [ ] Em **Layout da página**, escolha **Elementor Tela cheia**
+      (*Elementor Canvas*)
+- [ ] **Atualizar**
+
+O Canvas remove cabeçalho, rodapé e título do tema, deixando só o conteúdo
+do Elementor. O botão de WhatsApp e a barra de oferta continuam
+funcionando: ambos são injetados por `wp_footer`, que o Canvas mantém.
+
+---
+
 ## O que me reportar quando terminar
 
 Os dois pontos de risco desta montagem:

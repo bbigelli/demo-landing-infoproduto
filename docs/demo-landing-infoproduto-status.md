@@ -1,6 +1,6 @@
 # Status: demo-landing-infoproduto
 
-## Fase atual: Publicado no GitHub e no portfólio — aguardando montagem no LocalWP
+## Fase atual: Montado e validado no LocalWP — aguardando imagens e medição de performance
 ## Último agente: Claude principal (sessão de 2026-11-06)
 ## Branch: main
 
@@ -173,3 +173,60 @@ Registrado como memória de feedback para não repetir.
    ativar antes, em Settings > Emails do GitHub: "Keep my email addresses
    private" e "Block command line pushes that expose my email"
 2. **Assistente:** Projeto 2 (`demo-site-institucional`)
+
+---
+
+## Montagem no LocalWP — 2026-11-06 (mesma sessão)
+
+Feita com automação de navegador, a pedido do dev. O site já estava criado
+por ele, com Hello Elementor, child theme e Elementor instalados.
+
+### Validado no ambiente real
+
+| O que | Resultado |
+|---|---|
+| `functions.php` | Carrega sem erro. O painel abriu normalmente e o tema ativou — erro de sintaxe daria tela branca |
+| Botão de WhatsApp | Renderiza no verde escuro `#128C7E`, inclusive dentro do editor |
+| Import do template | 10 seções, 127 elementos, sem erro |
+| Console do navegador | Zero erros e zero 404. Só a mensagem informativa do jQuery Migrate |
+| Layout final | 6 cards em 3 colunas, semanas e depoimentos em 2, hero lado a lado |
+
+### Três defeitos encontrados e corrigidos
+
+Nenhum deles apareceria em validação estática. Detalhes técnicos no commit
+`c61459e`.
+
+1. **Classes não chegavam aos containers.** O controle chama-se
+   `css_classes` em container e `_css_classes` em widget. Usávamos a forma
+   com underscore para os dois, então os 82 widgets funcionavam e os 45
+   containers não — sem seção, sem grade, sem card.
+2. **Container boxed quebra grid.** `content_width: boxed` renderiza um
+   `.e-con-inner` entre o container e os filhos, e o `display: grid` caía
+   num elemento de um filho só. Todos os containers passaram a `full`.
+3. **Ícone do card sobrepunha o título.** O Elementor usa o `::before` dos
+   containers para o overlay de fundo, com `position: absolute`. Corrigido
+   com `position: static`.
+
+Além disso, o kit global do Elementor pintava título de azul e botão de
+verde. As cores passaram a ser declaradas com o prefixo `.elementor`, que
+vence por especificidade em vez de depender da ordem de carregamento.
+
+### Configuração aplicada na página
+
+- Layout **Elementor Canvas**, para remover cabeçalho, rodapé e título do
+  tema. Documentado como passo 7 do guia do LocalWP
+
+### Pendências que surgiram
+
+- Há 3 templates `Landing - Treino em Casa 30 Dias` na biblioteca do
+  Elementor (ids 13, 18 e 28), das três rodadas de correção. O válido é o
+  **28**. Os outros dois podem ser apagados em Modelos → Modelos salvos
+- Imagens continuam placeholder
+- Nota de PageSpeed ainda não medida
+
+### Próximo passo
+
+1. **Dev:** apagar os templates 13 e 18, trocar as imagens e rodar o
+   Lighthouse (DevTools → Lighthouse → Mobile → Performance)
+2. **Assistente:** Projeto 2, já com os três defeitos acima corrigidos no
+   gerador — não se repetem
