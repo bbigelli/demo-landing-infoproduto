@@ -189,6 +189,84 @@ body {
 }
 
 /* ==========================================================================
+   Overrides de layout do Elementor
+
+   O Elementor declara, no frontend.min.css:
+
+     .e-con, .e-con > .e-con-inner { display: var(--display); gap: var(--gap) }
+
+   com --display: flex. Todo container nosso TAMBEM e um .e-con, e os dois
+   seletores tem a mesma especificidade (0,1,0). Empate e resolvido pela
+   ordem de carregamento, que nao controlamos: no WordPress o nosso CSS
+   vinha depois e ganhava, mas no export estatico a ordem inverteu e todos
+   os grids viraram flex em coluna -- cards empilhados, hero sem as duas
+   colunas.
+
+   Ou seja: o layout estava funcionando por sorte. O prefixo .elementor
+   sobe a especificidade para (0,2,0) e torna o resultado deterministico.
+
+   Se um layout novo for adicionado abaixo, a regra de display e de gap
+   dele tambem precisa entrar aqui.
+   ========================================================================== */
+
+.elementor .tc-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: var(--tc-wrap);
+  margin-inline: auto;
+}
+
+.elementor .tc-hero,
+.elementor .tc-bio {
+  display: grid;
+  gap: 32px;
+}
+
+.elementor .tc-hero__copy,
+.elementor .tc-bio__copy,
+.elementor .tc-guarantee__copy {
+  display: grid;
+  gap: 16px;
+}
+
+.elementor .tc-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.elementor .tc-weeks {
+  display: grid;
+  gap: 16px;
+}
+
+.elementor .tc-card,
+.elementor .tc-week,
+.elementor .tc-quote {
+  display: grid;
+  gap: 10px;
+}
+
+.elementor .tc-guarantee {
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .elementor .tc-grid,
+  .elementor .tc-weeks {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .elementor .tc-hero,
+  .elementor .tc-bio {
+    gap: 56px;
+  }
+}
+
+/* ==========================================================================
    Tipografia
    ========================================================================== */
 

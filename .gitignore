@@ -16,3 +16,12 @@ assets/raw/
 
 # ZIP gerado por build/pack-theme.ps1 -- artefato derivado, nao versionado
 dist/
+
+# Saida bruta do Simply Static: 64MB de wp-includes que a pagina nao usa.
+# A versao enxuta fica em site-dist/, gerada por build/prune-static.mjs
+site/
+
+# Excecao: o site-dist/ e o artefato publicavel e precisa dos assets.
+# Sao 20 arquivos e 0,4MB, nao uma instalacao WordPress.
+!site-dist/
+!site-dist/**
