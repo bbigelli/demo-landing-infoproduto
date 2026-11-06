@@ -23,8 +23,9 @@ não estimativas.
 | `primary` | `#C2410C` | Botões de compra, links |
 | `primary-hover` | `#9A3412` | Estado hover e foco do botão |
 | `accent` | `#F59E0B` | Selos e destaques — **somente sobre fundo escuro** |
+| `star` | `#B45309` | Estrelas dos depoimentos, sobre card branco |
 | `success` | `#15803D` | Ícones de check, selo de garantia |
-| `whatsapp` | `#128C7E` | Botão flutuante de WhatsApp |
+| `whatsapp` | `#075E54` | Botão flutuante de WhatsApp |
 
 ## Contraste medido
 
@@ -38,20 +39,66 @@ não estimativas.
 | Branco sobre `surface-dark` | 17,49:1 | 4,5 | AAA |
 | `accent` sobre `surface-dark` | 8,14:1 | 4,5 | AAA |
 | `success` sobre branco | 5,02:1 | 4,5 | AA |
-| Ícone branco sobre `whatsapp` | 4,14:1 | 3,0 (ícone) | passa |
+| `star` sobre card branco | 5,02:1 | 4,5 | AA |
+| Texto branco sobre `whatsapp` | 7,67:1 | 4,5 | AAA |
+| Separador do rodapé `#78716C` | 4,59:1 | 4,5 | AA |
 
-### Duas restrições que saíram da medição
+### Três restrições que saíram da medição
 
-**1. O âmbar `#F59E0B` nunca vai sobre branco.** Mede 2,15:1 — reprovado
-com folga. É a cor dos selos, e selo sobre fundo claro é o erro mais comum
-nesse tipo de página. Sobre `surface-dark` ele mede 8,14:1 e funciona bem.
-Quando o selo precisar aparecer em seção clara, usar `primary` no texto com
-fundo `#FFF7ED`.
+**1. O âmbar `#F59E0B` nunca vai sobre fundo claro.** Mede 2,15:1 —
+reprovado com folga. É a cor dos selos, e selo sobre fundo claro é o erro
+mais comum nesse tipo de página. Sobre `surface-dark` ele mede 8,14:1 e
+funciona bem. Quando o selo precisar aparecer em seção clara, usar
+`primary` no texto com fundo `#FFF7ED`. As estrelas dos depoimentos ficam
+sobre card branco, então usam `star` (`#B45309`, 5,02:1), que mantém o tom
+dourado e passa.
 
 **2. O verde clássico do WhatsApp `#25D366` foi descartado.** Ícone branco
-sobre ele mede 1,98:1, abaixo do mínimo de 3:1 que a WCAG 1.4.11 exige para
-componente gráfico. Trocado pelo verde escuro oficial da marca `#128C7E`,
-que mede 4,14:1. Continua reconhecível como WhatsApp e passa no critério.
+sobre ele mede 1,98:1.
+
+**3. O botão de WhatsApp precisa de 4,5, não de 3,0.** O `#128C7E` chegou a
+ser adotado porque mede 4,14:1, o que passaria no critério de **componente
+gráfico** da WCAG 1.4.11. Mas o botão não é só um ícone: tem o rótulo
+"Falar no WhatsApp", e texto exige 4,5. Trocado pelo `#075E54`, o verde
+escuro do cabeçalho do aplicativo, que mede 7,67:1. A lição é escolher o
+critério pelo conteúdo real do componente, não pela ideia que se tem dele.
+
+---
+
+## Como auditar o contraste de verdade
+
+**Passar no `check-contrast.mjs` é necessário, mas não é suficiente.**
+
+Em 2026-11-06 o Lighthouse acusou **74 elementos** com contraste
+insuficiente numa página cuja paleta passava limpa no script. A paleta
+estava certa; errado estava o que o navegador pintava — o kit global do
+Elementor aplicava `#7A7A7A` (4,29:1) em todo widget de texto, por cima do
+nosso CSS.
+
+O script vê as cores que escolhemos. Ele não vê as que um plugin injeta.
+
+Então o procedimento tem duas etapas:
+
+1. **Ao escolher cores:** `node build/check-contrast.mjs`
+2. **Antes de dar como pronto:** auditar a página renderizada no navegador
+
+Na segunda etapa, varra todo elemento de texto visível, calcule o contraste
+contra o fundo **composto** — subindo a árvore até achar uma cor opaca e
+compondo as camadas com alpha pelo caminho — e compare com o mínimo correto
+para aquele tamanho e peso: 3,0 para texto grande (≥24px, ou ≥18,66px em
+negrito) e 4,5 para o resto.
+
+Dois detalhes que produziram um falso positivo e um falso negativo na
+primeira tentativa:
+
+- **Compor o alpha.** Ignorar o canal alfa faz um selo com
+  `rgba(245,158,11,0.14)` sobre fundo escuro ser lido como âmbar sobre
+  âmbar, ratio 1,00.
+- **Excluir a barra de administração.** Logado no WordPress, o
+  `#wpadminbar` entra na varredura e reporta falhas que o visitante nunca vê.
+
+Meta: zero falha na página pública. Última auditoria: 159 elementos
+testados, nenhuma falha.
 
 ---
 

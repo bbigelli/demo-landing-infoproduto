@@ -58,8 +58,15 @@ License:      GPL-2.0-or-later
   --tc-primary-hover: #9a3412;
   --tc-primary-tint: #fff7ed;
   --tc-accent: #f59e0b;
+  /* Estrela sobre card branco. O --tc-accent mede 2,15:1 e reprova; este
+     ambar escuro mede 5,02:1 e mantem o tom dourado. Ver a nota sobre o
+     ambar em docs/identidade-visual.md. */
+  --tc-star: #b45309;
   --tc-success: #15803d;
-  --tc-whatsapp: #128c7e;
+  /* Verde escuro do WhatsApp. O #128C7E mede 4,14:1 com texto branco e
+     reprova: o botao tem o rotulo "Falar no WhatsApp", entao vale o
+     minimo de 4,5 para texto, nao o de 3,0 para icone. Este mede 7,67:1. */
+  --tc-whatsapp: #075e54;
   --tc-border: #e7e5e4;
   --tc-border-dark: #3f3a36;
 
@@ -156,6 +163,55 @@ body {
   background: var(--tc-primary-tint);
 }
 
+/* Texto corrido.
+   O kit global do Elementor pinta todo widget de texto com
+   --e-global-color-text, que por padrao e #7A7A7A. Esse cinza mede
+   4,29:1 sobre branco e REPROVA no minimo de 4,5 da WCAG para texto
+   normal -- o Lighthouse acusou 74 elementos nesta pagina.
+
+   Nao basta declarar a cor so no body e deixar herdar: o Elementor
+   declara a dele no widget, e declaracao vence heranca. */
+.elementor .elementor-widget-text-editor,
+.elementor .elementor-widget-text-editor p,
+.elementor .elementor-widget-text-editor li,
+.elementor .elementor-widget-text-editor blockquote {
+  color: var(--tc-ink-soft);
+}
+
+/* Nas secoes escuras o texto inverte. */
+.elementor .tc-section--offer .elementor-widget-text-editor,
+.elementor .tc-section--offer .elementor-widget-text-editor p,
+.elementor .tc-section--offer .elementor-widget-text-editor li,
+.elementor .tc-section--closing .elementor-widget-text-editor,
+.elementor .tc-section--closing .elementor-widget-text-editor p {
+  color: #e7e5e4;
+}
+
+/* O selo da garantia e um <p> dentro de um text-editor, entao a regra
+   acima o alcanca e apagaria o branco sobre o verde -- 1,54:1. Precisa de
+   especificidade maior que o proprio override. */
+.elementor .tc-seal-wrap .tc-seal {
+  color: #ffffff;
+}
+
+/* O acordeao do FAQ nao e um text-editor: tem widget proprio, e o kit
+   pinta a pergunta com o verde #61CE70 (1,87:1 sobre o bege do estado
+   ativo) e a resposta com o cinza #7A7A7A (4,29:1). */
+.elementor .tc-faq .elementor-tab-content,
+.elementor .tc-faq .elementor-tab-content p {
+  color: var(--tc-ink-soft);
+}
+
+.elementor .tc-faq .elementor-tab-title,
+.elementor .tc-faq .elementor-tab-title a {
+  color: var(--tc-ink);
+}
+
+.elementor .tc-faq .elementor-tab-title.elementor-active,
+.elementor .tc-faq .elementor-tab-title.elementor-active a {
+  color: var(--tc-primary);
+}
+
 .elementor .tc-btn--primary .elementor-button {
   background-color: var(--tc-primary);
   color: #ffffff;
@@ -171,8 +227,10 @@ body {
   color: #ffffff;
 }
 
-.elementor .tc-stars .elementor-star-rating {
-  color: var(--tc-accent);
+.elementor .tc-stars .elementor-star-rating,
+.elementor .tc-stars .elementor-star-rating i,
+.elementor .tc-stars .elementor-star-rating span {
+  color: var(--tc-star);
 }
 
 /* Secoes escuras: o titulo inverte e o selo passa a usar o ambar, que so
@@ -732,7 +790,7 @@ a:focus-visible {
 
 .tc-stars .elementor-star-rating {
   font-size: 1.125rem;
-  color: var(--tc-accent);
+  color: var(--tc-star);
 }
 
 .tc-quote__body blockquote {
@@ -994,7 +1052,8 @@ a:focus-visible {
 
 .tc-footer__links i {
   font-style: normal;
-  color: var(--tc-border);
+  /* O --tc-border mede 1,20:1 sobre a secao e reprova. */
+  color: #78716c;
 }
 
 .tc-legal p {

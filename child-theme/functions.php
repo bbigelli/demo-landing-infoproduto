@@ -223,6 +223,54 @@ function tc_resource_hints() {
 	}
 }
 
+add_action( 'template_redirect', 'tc_prioritize_hero_image' );
+/**
+ * Tira o lazy loading da primeira imagem e marca a prioridade dela.
+ *
+ * O WordPress acrescenta `loading="lazy"` automaticamente em praticamente
+ * toda imagem, e o Elementor renderiza dentro de `the_content`, então o
+ * hero herda esse comportamento. Para o elemento de LCP isso é o oposto do
+ * desejado: o navegador adia justamente a imagem que define a nota.
+ *
+ * A primeira `<img>` desta página é sempre a do hero, então a troca é feita
+ * só na primeira ocorrência. Preferível a um filtro por anexo porque
+ * funciona igual com o placeholder do Elementor e com a imagem definitiva.
+ *
+ * @return void
+ */
+function tc_prioritize_hero_image() {
+	if ( ! tc_is_landing() ) {
+		return;
+	}
+
+	ob_start(
+		function ( $html ) {
+			$posicao = strpos( $html, '<img' );
+
+			if ( false === $posicao ) {
+				return $html;
+			}
+
+			$fim = strpos( $html, '>', $posicao );
+
+			if ( false === $fim ) {
+				return $html;
+			}
+
+			$tag = substr( $html, $posicao, $fim - $posicao + 1 );
+
+			// Remove os atributos que vamos redefinir, para não duplicar:
+			// o Elementor já emite decoding="async" por conta própria.
+			$nova = preg_replace( '/\s+loading=(["\'])[^"\']*\1/i', '', $tag );
+			$nova = preg_replace( '/\s+fetchpriority=(["\'])[^"\']*\1/i', '', $nova );
+			$nova = preg_replace( '/\s+decoding=(["\'])[^"\']*\1/i', '', $nova );
+			$nova = preg_replace( '/^<img/', '<img fetchpriority="high" decoding="async"', $nova );
+
+			return substr_replace( $html, $nova, $posicao, strlen( $tag ) );
+		}
+	);
+}
+
 /* -------------------------------------------------------------------------
  * Pixel da Meta
  *

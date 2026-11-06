@@ -1,5 +1,18 @@
 // WCAG 2.1 contrast checker for the demo palettes.
 // Usage: node build/check-contrast.mjs
+//
+// IMPORTANT, learned the hard way on 2026-11-06: passing here is necessary
+// but NOT sufficient. This script checks the palette we designed; it cannot
+// see what the browser actually paints.
+//
+// Lighthouse found 74 failing elements on a page whose palette passed this
+// check clean, because Elementor's global kit was painting every text widget
+// #7A7A7A (4.29:1) regardless of our CSS. The palette was fine. The render
+// was not.
+//
+// So: run this when choosing colors, and ALSO audit the rendered page in a
+// browser before claiming contrast is handled. See docs/identidade-visual.md,
+// section "Como auditar o contraste de verdade".
 
 const srgbToLinear = (c) => {
   const s = c / 255;
@@ -25,8 +38,13 @@ const PALETTE = {
   primary: '#C2410C',
   primaryHover: '#9A3412',
   accent: '#F59E0B',
+  star: '#B45309',
   success: '#15803D',
-  whatsapp: '#25D366',
+  whatsapp: '#075E54',
+  footerSep: '#78716C',
+  // Nao faz parte da nossa paleta: e a cor de texto do kit global do
+  // Elementor, aqui para documentar por que ela precisa ser sobrescrita.
+  elementorText: '#7A7A7A',
 };
 
 // [label, foreground, background, isLargeText]
@@ -41,8 +59,11 @@ const PAIRS = [
   ['accent text on white (AVOID)', 'accent', 'surface', false],
   ['success text on white', 'success', 'surface', false],
   ['primary link on white', 'primary', 'surface', false],
-  ['white text on whatsapp (AVOID)', 'surface', 'whatsapp', false],
-  ['ink text on whatsapp', 'ink', 'whatsapp', false],
+  ['white text on whatsapp button', 'surface', 'whatsapp', false],
+  ['star on white card', 'star', 'surface', false],
+  ['accent as star on white (AVOID)', 'accent', 'surface', false],
+  ['footer separator on surfaceAlt', 'footerSep', 'surfaceAlt', false],
+  ['Elementor kit text on white (AVOID)', 'elementorText', 'surface', false],
 ];
 
 const threshold = (large) => (large ? 3.0 : 4.5);
