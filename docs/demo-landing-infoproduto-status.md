@@ -1,6 +1,6 @@
 # Status: demo-landing-infoproduto
 
-## Fase atual: Montado e validado no LocalWP — aguardando imagens e medição de performance
+## Fase atual: Demo publicada e medida (PageSpeed 100) — aguardando imagens definitivas
 ## Último agente: Claude principal (sessão de 2026-11-06)
 ## Branch: main
 
@@ -230,3 +230,66 @@ vence por especificidade em vez de depender da ordem de carregamento.
    Lighthouse (DevTools → Lighthouse → Mobile → Performance)
 2. **Assistente:** Projeto 2, já com os três defeitos acima corrigidos no
    gerador — não se repetem
+
+---
+
+## Demo publicada — 2026-11-06 (mesma sessão)
+
+**URL:** https://demo-landing-infoproduto-site-dist.vercel.app/
+
+Publicada como site estatico na Vercel, a partir da pasta `site-dist/` do
+repositório. A landing não tem formulário nem nada dinâmico, então não se
+perde nada em servir assim, e a nota de PageSpeed fica melhor do que em
+hospedagem compartilhada.
+
+### PageSpeed Insights, celular
+
+| Categoria | Antes das correções | Depois |
+|---|---|---|
+| Desempenho | 98 | **100** |
+| Acessibilidade | 93 | **97** |
+| Práticas recomendadas | 96 | 96 |
+| SEO | 50 | 50 |
+
+Metricas: FCP 1,4s, LCP 1,4s, TBT 0ms, CLS 0,003.
+
+**O SEO 50 é intencional e nao deve ser corrigido.** A única reprovação é
+"a página está bloqueada para indexação", que é exatamente o que queremos:
+demo com produto fictício não deve ranquear competindo com o portfolio
+real. Se um dia for preciso mostrar SEO 100 num print, basta tirar o
+noindex temporariamente, medir e repor.
+
+### Quatro defeitos que só a publicação revelou
+
+1. **Layout funcionava por sorte.** `.tc-grid` e `.e-con` do Elementor tem
+   a mesma especificidade; no WordPress o nosso CSS carregava depois e
+   ganhava, no estático a ordem inverteu e todo grid virou flex em coluna.
+   Resolvido com o prefixo `.elementor`.
+2. **74 elementos com contraste insuficiente**, numa paleta que passava
+   limpa no `check-contrast.mjs`. O kit do Elementor pintava todo texto
+   com `#7A7A7A` (4,29:1). Ver a seção nova de
+   `docs/identidade-visual.md` sobre auditar o renderizado, não só a
+   paleta.
+3. **Hero com `loading="lazy"`**, sendo o elemento de LCP. O doc dizia
+   `eager` com `fetchpriority`, o código não cumpria.
+4. **Cache `immutable` prendia o CSS por um ano.** O deploy subia o HTML
+   novo e o visitante continuava recebendo o CSS velho. `immutable` só
+   serve para URL com hash no nome.
+
+### Pendências
+
+- Fontes Inter ainda ausentes: a página usa a fonte do sistema
+- Imagens ainda sao o placeholder do Elementor, e por isso ficam com
+  `alt` vazio — o Elementor tira o alt do anexo da biblioteca, e o
+  placeholder não é um anexo. É o que provavelmente separa a
+  acessibilidade de 97 para 100
+- Tres templates duplicados na biblioteca do Elementor (ids 13, 18, 28);
+  o válido é o 28
+
+### Próximo passo
+
+1. **Dev:** trocar as imagens pelas definitivas, já pela biblioteca de
+   mídia e com o texto alternativo preenchido, e baixar os dois `.woff2`
+   da Inter. Depois `Push` no Simply Static,
+   `node build/prune-static.mjs`, commit e push
+2. **Assistente:** Projeto 2
