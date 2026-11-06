@@ -103,6 +103,20 @@ let extras = 0;
 if (existsSync(DEPLOY)) {
   for (const e of readdirSync(DEPLOY, { withFileTypes: true })) {
     if (!e.isFile() || e.name === 'README.md') continue;
+
+    // Valida JSON antes de publicar. Um vercel.json malformado nao quebra
+    // o build da Vercel: ela simplesmente ignora o arquivo, e os headers
+    // de cache e seguranca somem sem aviso nenhum.
+    if (e.name.endsWith('.json')) {
+      const bruto = readFileSync(join(DEPLOY, e.name), 'utf8');
+      try {
+        JSON.parse(bruto);
+      } catch (err) {
+        console.error(`deploy/${e.name} nao e JSON valido: ${err.message}`);
+        process.exit(1);
+      }
+    }
+
     copyFileSync(join(DEPLOY, e.name), join(OUT, e.name));
     extras += 1;
   }
