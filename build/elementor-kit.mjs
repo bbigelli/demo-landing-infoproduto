@@ -26,10 +26,34 @@ export function resetIds() {
   seq = 0;
 }
 
-/** Flexbox container. */
-export function container({ cls = '', children = [], width = 'boxed', inner = false, extra = {} }) {
+/** Flexbox container.
+ *
+ * The custom-class control is named differently per element type, and getting
+ * this wrong fails silently -- the import succeeds and the classes simply
+ * never reach the DOM:
+ *
+ *   container -> css_classes   (no underscore)
+ *   widget    -> _css_classes  (leading underscore)
+ *
+ * Verified against elementor.config.elements.container.controls in a live
+ * editor, not guessed.
+ */
+/* Default is 'full', not 'boxed', and that matters more than it looks.
+ *
+ * A boxed container renders an extra .e-con-inner wrapper between itself and
+ * its children:
+ *
+ *   .e-con-boxed            <- our class, where display:grid lands
+ *     .e-con-inner          <- the only child, so the grid has ONE cell
+ *       .tc-card            <- real children, now grandchildren, stacked
+ *
+ * Every grid and flex rule we write would apply to a one-child element and do
+ * nothing. With 'full' there is no wrapper and the children are direct, so the
+ * layout works. Max width is handled by .tc-wrap in the stylesheet, which is
+ * where it belongs. */
+export function container({ cls = '', children = [], width = 'full', inner = false, extra = {} }) {
   const settings = { content_width: width, ...extra };
-  if (cls) settings._css_classes = cls;
+  if (cls) settings.css_classes = cls;
   return { id: id(), elType: 'container', settings, elements: children, isInner: inner };
 }
 

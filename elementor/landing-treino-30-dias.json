@@ -5,31 +5,31 @@
       "elType": "container",
       "settings": {
         "content_width": "full",
-        "_css_classes": "tc-section tc-section--hero"
+        "css_classes": "tc-section tc-section--hero"
       },
       "elements": [
         {
           "id": "c623b07",
           "elType": "container",
           "settings": {
-            "content_width": "boxed",
-            "_css_classes": "tc-wrap"
+            "content_width": "full",
+            "css_classes": "tc-wrap"
           },
           "elements": [
             {
               "id": "e2ac14c",
               "elType": "container",
               "settings": {
-                "content_width": "boxed",
-                "_css_classes": "tc-hero"
+                "content_width": "full",
+                "css_classes": "tc-hero"
               },
               "elements": [
                 {
                   "id": "384541c",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-hero__copy"
+                    "content_width": "full",
+                    "css_classes": "tc-hero__copy"
                   },
                   "elements": [
                     {
@@ -101,8 +101,8 @@
                   "id": "ff34791",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-hero__art"
+                    "content_width": "full",
+                    "css_classes": "tc-hero__art"
                   },
                   "elements": [
                     {
@@ -138,15 +138,15 @@
       "elType": "container",
       "settings": {
         "content_width": "full",
-        "_css_classes": "tc-section tc-section--benefits"
+        "css_classes": "tc-section tc-section--benefits"
       },
       "elements": [
         {
           "id": "195a48d",
           "elType": "container",
           "settings": {
-            "content_width": "boxed",
-            "_css_classes": "tc-wrap"
+            "content_width": "full",
+            "css_classes": "tc-wrap"
           },
           "elements": [
             {
@@ -182,16 +182,16 @@
               "id": "35e2ad2",
               "elType": "container",
               "settings": {
-                "content_width": "boxed",
-                "_css_classes": "tc-grid tc-grid--3"
+                "content_width": "full",
+                "css_classes": "tc-grid tc-grid--3"
               },
               "elements": [
                 {
                   "id": "54021f3",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-card tc-card--icon tc-icon-clock"
+                    "content_width": "full",
+                    "css_classes": "tc-card tc-card--icon tc-icon-clock"
                   },
                   "elements": [
                     {
@@ -219,8 +219,8 @@
                   "id": "fe68f23",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-card tc-card--icon tc-icon-home"
+                    "content_width": "full",
+                    "css_classes": "tc-card tc-card--icon tc-icon-home"
                   },
                   "elements": [
                     {
@@ -248,8 +248,8 @@
                   "id": "a8cfc54",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-card tc-card--icon tc-icon-trending"
+                    "content_width": "full",
+                    "css_classes": "tc-card tc-card--icon tc-icon-trending"
                   },
                   "elements": [
                     {
@@ -277,8 +277,8 @@
                   "id": "5336985",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-card tc-card--icon tc-icon-layers"
+                    "content_width": "full",
+                    "css_classes": "tc-card tc-card--icon tc-icon-layers"
                   },
                   "elements": [
                     {
@@ -306,8 +306,8 @@
                   "id": "fd9d6b5",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-card tc-card--icon tc-icon-calendar"
+                    "content_width": "full",
+                    "css_classes": "tc-card tc-card--icon tc-icon-calendar"
                   },
                   "elements": [
                     {
@@ -335,8 +335,8 @@
                   "id": "a8043e6",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-card tc-card--icon tc-icon-infinity"
+                    "content_width": "full",
+                    "css_classes": "tc-card tc-card--icon tc-icon-infinity"
                   },
                   "elements": [
                     {
@@ -374,15 +374,15 @@
       "elType": "container",
       "settings": {
         "content_width": "full",
-        "_css_classes": "tc-section tc-section--curriculum"
+        "css_classes": "tc-section tc-section--curriculum"
       },
       "elements": [
         {
           "id": "6c90e12",
           "elType": "container",
           "settings": {
-            "content_width": "boxed",
-            "_css_classes": "tc-wrap"
+            "content_width": "full",
+            "css_classes": "tc-wrap"
           },
           "elements": [
             {
@@ -418,16 +418,16 @@
               "id": "c22a0e1",
               "elType": "container",
               "settings": {
-                "content_width": "boxed",
-                "_css_classes": "tc-weeks"
+                "content_width": "full",
+                "css_classes": "tc-weeks"
               },
               "elements": [
                 {
                   "id": "8ab0533",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-week"
+                    "content_width": "full",
+                    "css_classes": "tc-week"
                   },
                   "elements": [
                     {
@@ -464,8 +464,8 @@
                   "id": "188ec1f",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-week"
+                    "content_width": "full",
+                    "css_classes": "tc-week"
                   },
                   "elements": [
                     {
@@ -502,8 +502,8 @@
                   "id": "a66d30a",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-week"
+                    "content_width": "full",
+                    "css_classes": "tc-week"
                   },
                   "elements": [
                     {
@@ -540,8 +540,8 @@
                   "id": "344b9f6",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-week"
+                    "content_width": "full",
+                    "css_classes": "tc-week"
                   },
                   "elements": [
                     {
@@ -607,31 +607,31 @@
       "elType": "container",
       "settings": {
         "content_width": "full",
-        "_css_classes": "tc-section tc-section--bio"
+        "css_classes": "tc-section tc-section--bio"
       },
       "elements": [
         {
           "id": "32b491a",
           "elType": "container",
           "settings": {
-            "content_width": "boxed",
-            "_css_classes": "tc-wrap"
+            "content_width": "full",
+            "css_classes": "tc-wrap"
           },
           "elements": [
             {
               "id": "4f3cf5f",
               "elType": "container",
               "settings": {
-                "content_width": "boxed",
-                "_css_classes": "tc-bio"
+                "content_width": "full",
+                "css_classes": "tc-bio"
               },
               "elements": [
                 {
                   "id": "16f7b43",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-bio__art"
+                    "content_width": "full",
+                    "css_classes": "tc-bio__art"
                   },
                   "elements": [
                     {
@@ -657,8 +657,8 @@
                   "id": "6bc55a4",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-bio__copy"
+                    "content_width": "full",
+                    "css_classes": "tc-bio__copy"
                   },
                   "elements": [
                     {
@@ -724,15 +724,15 @@
       "elType": "container",
       "settings": {
         "content_width": "full",
-        "_css_classes": "tc-section tc-section--quotes"
+        "css_classes": "tc-section tc-section--quotes"
       },
       "elements": [
         {
           "id": "befbf29",
           "elType": "container",
           "settings": {
-            "content_width": "boxed",
-            "_css_classes": "tc-wrap"
+            "content_width": "full",
+            "css_classes": "tc-wrap"
           },
           "elements": [
             {
@@ -768,16 +768,16 @@
               "id": "db8456e",
               "elType": "container",
               "settings": {
-                "content_width": "boxed",
-                "_css_classes": "tc-grid tc-grid--2"
+                "content_width": "full",
+                "css_classes": "tc-grid tc-grid--2"
               },
               "elements": [
                 {
                   "id": "a40a9c0",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-quote"
+                    "content_width": "full",
+                    "css_classes": "tc-quote"
                   },
                   "elements": [
                     {
@@ -816,8 +816,8 @@
                   "id": "31e90ac",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-quote"
+                    "content_width": "full",
+                    "css_classes": "tc-quote"
                   },
                   "elements": [
                     {
@@ -856,8 +856,8 @@
                   "id": "bfc7797",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-quote"
+                    "content_width": "full",
+                    "css_classes": "tc-quote"
                   },
                   "elements": [
                     {
@@ -896,8 +896,8 @@
                   "id": "4da5e83",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-quote"
+                    "content_width": "full",
+                    "css_classes": "tc-quote"
                   },
                   "elements": [
                     {
@@ -946,23 +946,23 @@
       "elType": "container",
       "settings": {
         "content_width": "full",
-        "_css_classes": "tc-section tc-section--guarantee"
+        "css_classes": "tc-section tc-section--guarantee"
       },
       "elements": [
         {
           "id": "dab8d00",
           "elType": "container",
           "settings": {
-            "content_width": "boxed",
-            "_css_classes": "tc-wrap"
+            "content_width": "full",
+            "css_classes": "tc-wrap"
           },
           "elements": [
             {
               "id": "f741345",
               "elType": "container",
               "settings": {
-                "content_width": "boxed",
-                "_css_classes": "tc-guarantee"
+                "content_width": "full",
+                "css_classes": "tc-guarantee"
               },
               "elements": [
                 {
@@ -978,8 +978,8 @@
                   "id": "13c998b",
                   "elType": "container",
                   "settings": {
-                    "content_width": "boxed",
-                    "_css_classes": "tc-guarantee__copy"
+                    "content_width": "full",
+                    "css_classes": "tc-guarantee__copy"
                   },
                   "elements": [
                     {
@@ -1027,15 +1027,15 @@
       "elType": "container",
       "settings": {
         "content_width": "full",
-        "_css_classes": "tc-section tc-section--offer"
+        "css_classes": "tc-section tc-section--offer"
       },
       "elements": [
         {
           "id": "d9ed492",
           "elType": "container",
           "settings": {
-            "content_width": "boxed",
-            "_css_classes": "tc-wrap"
+            "content_width": "full",
+            "css_classes": "tc-wrap"
           },
           "elements": [
             {
@@ -1120,15 +1120,15 @@
       "elType": "container",
       "settings": {
         "content_width": "full",
-        "_css_classes": "tc-section tc-section--faq"
+        "css_classes": "tc-section tc-section--faq"
       },
       "elements": [
         {
           "id": "6700310",
           "elType": "container",
           "settings": {
-            "content_width": "boxed",
-            "_css_classes": "tc-wrap"
+            "content_width": "full",
+            "css_classes": "tc-wrap"
           },
           "elements": [
             {
@@ -1213,15 +1213,15 @@
       "elType": "container",
       "settings": {
         "content_width": "full",
-        "_css_classes": "tc-section tc-section--closing"
+        "css_classes": "tc-section tc-section--closing"
       },
       "elements": [
         {
           "id": "bbcdd71",
           "elType": "container",
           "settings": {
-            "content_width": "boxed",
-            "_css_classes": "tc-wrap"
+            "content_width": "full",
+            "css_classes": "tc-wrap"
           },
           "elements": [
             {
@@ -1284,15 +1284,15 @@
       "elType": "container",
       "settings": {
         "content_width": "full",
-        "_css_classes": "tc-section tc-section--footer"
+        "css_classes": "tc-section tc-section--footer"
       },
       "elements": [
         {
           "id": "109b7d3",
           "elType": "container",
           "settings": {
-            "content_width": "boxed",
-            "_css_classes": "tc-wrap"
+            "content_width": "full",
+            "css_classes": "tc-wrap"
           },
           "elements": [
             {

@@ -122,6 +122,73 @@ body {
 }
 
 /* ==========================================================================
+   Overrides do kit global do Elementor
+
+   O Elementor gera um CSS por pagina (post-N.css) que carrega DEPOIS do
+   tema e pinta os widgets com as cores do kit global: por padrao o azul
+   #6EC1E4 nos titulos e o verde #61CE70 nos botoes.
+
+   Os seletores dele -- .elementor-widget-heading .elementor-heading-title --
+   tem exatamente a mesma especificidade que os nossos, e empate de
+   especificidade e decidido pela ordem de carregamento, que perdemos.
+
+   Duas consequencias, e as duas foram verificadas no navegador:
+
+   1. As cores precisam do prefixo .elementor, que sobe a especificidade e
+      torna o resultado independente da ordem dos arquivos.
+   2. A cor precisa ser declarada explicitamente. Deixar o titulo herdar a
+      cor do body nao funciona: o Elementor declara a dele, e declaracao
+      sempre vence heranca.
+
+   A alternativa seria configurar o kit global do Elementor com a nossa
+   paleta, mas isso fica no banco de dados e nao no repositorio -- o tema
+   deixaria de ser auto-suficiente.
+   ========================================================================== */
+
+.elementor .tc-h1 .elementor-heading-title,
+.elementor .tc-h2 .elementor-heading-title,
+.elementor .tc-h3 .elementor-heading-title {
+  color: var(--tc-ink);
+}
+
+.elementor .tc-badge .elementor-heading-title {
+  color: var(--tc-primary);
+  background: var(--tc-primary-tint);
+}
+
+.elementor .tc-btn--primary .elementor-button {
+  background-color: var(--tc-primary);
+  color: #ffffff;
+}
+
+.elementor .tc-btn--primary .elementor-button:hover,
+.elementor .tc-btn--primary .elementor-button:focus {
+  background-color: var(--tc-primary-hover);
+}
+
+.elementor .tc-btn--ghost .elementor-button {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.elementor .tc-stars .elementor-star-rating {
+  color: var(--tc-accent);
+}
+
+/* Secoes escuras: o titulo inverte e o selo passa a usar o ambar, que so
+   tem contraste suficiente sobre fundo escuro. */
+.elementor .tc-section--offer .elementor-heading-title,
+.elementor .tc-section--closing .elementor-heading-title {
+  color: #ffffff;
+}
+
+.elementor .tc-section--offer .tc-badge .elementor-heading-title,
+.elementor .tc-section--closing .tc-badge .elementor-heading-title {
+  color: var(--tc-accent);
+  background: rgba(245, 158, 11, 0.14);
+}
+
+/* ==========================================================================
    Tipografia
    ========================================================================== */
 
@@ -397,9 +464,16 @@ a:focus-visible {
   background: var(--tc-surface-alt);
 }
 
-/* Icone do card: SVG inline por classe, zero requisicao e zero KB de fonte. */
+/* Icone do card: SVG inline por classe, zero requisicao e zero KB de fonte.
+ *
+ * position: static e obrigatorio aqui. O Elementor usa o ::before dos
+ * containers (.e-con) para o overlay de fundo e o declara com
+ * position: absolute. Sem o reset, o icone ate aparece, mas sai do fluxo:
+ * nao ocupa linha no grid do card e fica por baixo do titulo.
+ * Verificado no navegador -- com o reset o grid passa de 2 para 3 linhas. */
 .tc-card--icon::before {
   content: '';
+  position: static;
   display: block;
   width: 44px;
   height: 44px;
