@@ -13,3 +13,6 @@ wp-config.php
 
 # Screenshots are heavy; keep only the curated ones under assets/
 assets/raw/
+
+# ZIP gerado por build/pack-theme.ps1 -- artefato derivado, nao versionado
+dist/
