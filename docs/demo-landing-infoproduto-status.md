@@ -1,6 +1,6 @@
 # Status: demo-landing-infoproduto
 
-## Fase atual: Entregáveis de código concluídos — aguardando montagem no LocalWP
+## Fase atual: Publicado no GitHub e no portfólio — aguardando montagem no LocalWP
 ## Último agente: Claude principal (sessão de 2026-11-06)
 ## Branch: main
 
@@ -89,7 +89,9 @@ Nenhum blocker de código. O que falta depende de ação manual:
 - Nota de PageSpeed não medida. Medir com Lighthouse local enquanto estiver
   no LocalWP; o Live Link adiciona latência de túnel e dá nota pior que a
   real
-- Nenhum commit feito ainda nesta sessão — arquivos em stage, aguardando
+- A capa do case no portfólio é um SVG ilustrativo, não screenshot. Trocar
+  pelo print real depois do passo 11 do checklist, e aí acrescentar o campo
+  `demo` na entrada de `src/data/projetos.js`
 
 ---
 
@@ -106,3 +108,68 @@ Duas frentes, independentes entre si:
    Clínica de Fisioterapia Movimento) — 4 páginas, paleta teal
    deliberadamente oposta à desta demo, mapa e WhatsApp flutuante. Não
    depende do passo 1.
+
+---
+
+## Publicação — 2026-11-06 (mesma sessão)
+
+### Repositório
+
+- `https://github.com/bbigelli/demo-landing-infoproduto` — público, branch
+  `main`, 16 arquivos
+- Varredura por segredos antes de publicar: nenhum. Número de WhatsApp é
+  placeholder, checkout é `EXEMPLO-DEMO`, ID do Pixel fora do repositório
+
+### Case no portfólio
+
+Publicado em `bbigelli/meu-portifolio`, commit `1d731d1`:
+
+- entrada em `src/data/projetos.js` seguindo o contrato existente
+- capa em `src/assets/images/Capa-Landing-Infoproduto.svg`
+- sem campo `demo` (o repo está publicado, a página ainda não)
+- validado com `CI=true npm run build`: compila sem warning, SVG emitido em
+  `static/media`, projeto presente no bundle
+
+### Defeito encontrado e corrigido no portfólio
+
+O `README.md` documentava uma stack que o projeto não usa. Era Create React
+App descrito como Vite:
+
+| Dizia | Real |
+|---|---|
+| badge e tabela: Vite 5 | `react-scripts` 5 (CRA) |
+| `npm run dev` | `npm start` |
+| porta 5173 | porta 3000 |
+| `VITE_FORM_ID` | `REACT_APP_FORM_ID` |
+
+O último item era o mais grave: `Contato.jsx` lê `REACT_APP_FORM_ID`, então
+quem clonasse e seguisse o README ficava com o formulário de contato
+quebrado sem aviso. Corrigidos também o typo "Artesatanos" e uma célula de
+tabela com pipe duplicado.
+
+Não corrigido, deixado para decisão do dev: o README linka `LICENSE`, e o
+arquivo não existe no repositório.
+
+### Correção de autoria dos commits
+
+O commit inicial do repo 1 saiu com o e-mail do perfil do Manager
+(`marcoaurelioexp@...`) porque foi passado explicitamente via `-c
+user.email`, sobrescrevendo a config global, que já estava correta. O dev
+pediu a correção.
+
+- `--amend --reset-author` + `push --force-with-lease` corrigiu o branch
+- mas o commit antigo ficou **órfão e ainda acessível por SHA** na API do
+  GitHub, com o e-mail antigo. Force push não remove o objeto
+- resolvido deletando e recriando o repositório (o dev deletou pela
+  interface; o token não tem o scope `delete_repo`). O SHA antigo agora
+  retorna `422 No commit found`
+- identidade fixada em `git config user.*` nos dois repos locais
+
+Registrado como memória de feedback para não repetir.
+
+### Próximo passo revisado
+
+1. **Dev:** passos 1 a 5 do checklist no LocalWP (~40 min). Recomendado
+   ativar antes, em Settings > Emails do GitHub: "Keep my email addresses
+   private" e "Block command line pushes that expose my email"
+2. **Assistente:** Projeto 2 (`demo-site-institucional`)
