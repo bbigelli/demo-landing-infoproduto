@@ -1,0 +1,1345 @@
+{
+  "content": [
+    {
+      "id": "a99b4c2",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "_css_classes": "tc-section tc-section--hero"
+      },
+      "elements": [
+        {
+          "id": "c623b07",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "_css_classes": "tc-wrap"
+          },
+          "elements": [
+            {
+              "id": "e2ac14c",
+              "elType": "container",
+              "settings": {
+                "content_width": "boxed",
+                "_css_classes": "tc-hero"
+              },
+              "elements": [
+                {
+                  "id": "384541c",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-hero__copy"
+                  },
+                  "elements": [
+                    {
+                      "id": "e3779ba",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Mais de 4.000 alunos nos últimos 2 anos",
+                        "header_size": "span",
+                        "_css_classes": "tc-badge"
+                      }
+                    },
+                    {
+                      "id": "c6ef375",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Entre em forma em casa, com 20 minutos por dia",
+                        "header_size": "h1",
+                        "_css_classes": "tc-h1"
+                      }
+                    },
+                    {
+                      "id": "aa66d30",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>O método de 30 dias que cria o hábito do treino sem academia, sem equipamento e sem precisar reorganizar a sua vida. Você escolhe o horário, o treino se encaixa nele.</p>",
+                        "_css_classes": "tc-lead"
+                      }
+                    },
+                    {
+                      "id": "8dde6eb",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<ul class=\"tc-checks\"><li>30 treinos guiados em vídeo, de 20 minutos cada</li><li>Nenhum equipamento necessário — só o peso do corpo</li><li>Acesso imediato, pelo celular, pela TV ou pelo computador</li></ul>",
+                        "_css_classes": "tc-checks"
+                      }
+                    },
+                    {
+                      "id": "71560a6",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Quero começar hoje — R$ 197",
+                        "link": {
+                          "url": "https://pay.hotmart.com/EXEMPLO-DEMO",
+                          "is_external": "on",
+                          "nofollow": "",
+                          "custom_attributes": ""
+                        },
+                        "_css_classes": "tc-btn tc-btn--primary"
+                      }
+                    },
+                    {
+                      "id": "54cda61",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Acesso imediato · 7 dias de garantia · Pagamento único</p>",
+                        "_css_classes": "tc-note"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "ff34791",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-hero__art"
+                  },
+                  "elements": [
+                    {
+                      "id": "1bbcdd7",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+                          "id": "",
+                          "alt": "Mulher fazendo agachamento na sala de casa, usando roupa de treino comum",
+                          "source": "library"
+                        },
+                        "image_size": "full",
+                        "lazy_load": "",
+                        "_css_classes": "tc-hero__img"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "fcd1e47",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "_css_classes": "tc-section tc-section--benefits"
+      },
+      "elements": [
+        {
+          "id": "195a48d",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "_css_classes": "tc-wrap"
+          },
+          "elements": [
+            {
+              "id": "8b7bda1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Por que funciona",
+                "header_size": "span",
+                "_css_classes": "tc-badge"
+              }
+            },
+            {
+              "id": "6ef375c",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Feito para quem tem pouco tempo e já desistiu antes",
+                "header_size": "h2",
+                "_css_classes": "tc-h2"
+              }
+            },
+            {
+              "id": "526b117",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>A maioria dos programas de treino falha por um motivo simples: eles exigem mais do que a sua rotina comporta. Este foi construído ao contrário — começa pelo tempo que você realmente tem.</p>",
+                "_css_classes": "tc-lead"
+              }
+            },
+            {
+              "id": "35e2ad2",
+              "elType": "container",
+              "settings": {
+                "content_width": "boxed",
+                "_css_classes": "tc-grid tc-grid--3"
+              },
+              "elements": [
+                {
+                  "id": "54021f3",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-card tc-card--icon tc-icon-clock"
+                  },
+                  "elements": [
+                    {
+                      "id": "8d12e7d",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "20 minutos que caibam no seu dia",
+                        "header_size": "h3",
+                        "_css_classes": "tc-h3"
+                      }
+                    },
+                    {
+                      "id": "708a838",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Cada treino tem começo, meio e fim em 20 minutos, incluindo aquecimento e alongamento. Dá pra fazer antes do trabalho, no intervalo do almoço ou depois que as crianças dormem.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "fe68f23",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-card tc-card--icon tc-icon-home"
+                  },
+                  "elements": [
+                    {
+                      "id": "3779bae",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Zero equipamento, zero desculpa",
+                        "header_size": "h3",
+                        "_css_classes": "tc-h3"
+                      }
+                    },
+                    {
+                      "id": "1af1569",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Todos os exercícios usam o peso do corpo e, no máximo, uma cadeira. Nenhuma compra, nenhuma adaptação, nenhum deslocamento.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "a8cfc54",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-card tc-card--icon tc-icon-trending"
+                  },
+                  "elements": [
+                    {
+                      "id": "e1e08de",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Progressão real, não aleatória",
+                        "header_size": "h3",
+                        "_css_classes": "tc-h3"
+                      }
+                    },
+                    {
+                      "id": "c558299",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Os 30 dias seguem uma ordem pensada: adaptação, intensidade e consolidação. Você não repete o mesmo treino até cansar — você evolui.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "5336985",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-card tc-card--icon tc-icon-layers"
+                  },
+                  "elements": [
+                    {
+                      "id": "8c4760f",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Três níveis no mesmo treino",
+                        "header_size": "h3",
+                        "_css_classes": "tc-h3"
+                      }
+                    },
+                    {
+                      "id": "6fbefca",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Toda sequência tem versão iniciante, intermediária e avançada demonstradas lado a lado. Você começa onde está e sobe quando estiver pronto.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "fd9d6b5",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-card tc-card--icon tc-icon-calendar"
+                  },
+                  "elements": [
+                    {
+                      "id": "36ae340",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Acompanhamento do hábito",
+                        "header_size": "h3",
+                        "_css_classes": "tc-h3"
+                      }
+                    },
+                    {
+                      "id": "1a25cfb",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Um calendário imprimível e um checklist diário para marcar os treinos feitos. Constância se constrói vendo o progresso acumulado.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "a8043e6",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-card tc-card--icon tc-icon-infinity"
+                  },
+                  "elements": [
+                    {
+                      "id": "e115070",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Seu no dia 31 também",
+                        "header_size": "h3",
+                        "_css_classes": "tc-h3"
+                      }
+                    },
+                    {
+                      "id": "c48ca2b",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>O acesso não expira ao fim dos 30 dias. Você repete o ciclo quantas vezes quiser, com mais carga e mais intensidade.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "50087cd",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "_css_classes": "tc-section tc-section--curriculum"
+      },
+      "elements": [
+        {
+          "id": "6c90e12",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "_css_classes": "tc-wrap"
+          },
+          "elements": [
+            {
+              "id": "17c33b1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "O que você recebe",
+                "header_size": "span",
+                "_css_classes": "tc-badge"
+              }
+            },
+            {
+              "id": "fb3ad6b",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Os 30 dias, semana por semana",
+                "header_size": "h2",
+                "_css_classes": "tc-h2"
+              }
+            },
+            {
+              "id": "deb2726",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Quatro semanas, quatro objetivos. Nenhum treino solto: cada um prepara o seguinte.</p>",
+                "_css_classes": "tc-lead"
+              }
+            },
+            {
+              "id": "c22a0e1",
+              "elType": "container",
+              "settings": {
+                "content_width": "boxed",
+                "_css_classes": "tc-weeks"
+              },
+              "elements": [
+                {
+                  "id": "8ab0533",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-week"
+                  },
+                  "elements": [
+                    {
+                      "id": "e049802",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"tc-week__meta\"><strong>Semana 1</strong> <span>Dias 1 a 7</span></p>",
+                        "_css_classes": "tc-week__meta-wrap"
+                      }
+                    },
+                    {
+                      "id": "c3c11bd",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Adaptação e movimento",
+                        "header_size": "h3",
+                        "_css_classes": "tc-h3"
+                      }
+                    },
+                    {
+                      "id": "a738b78",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>O corpo volta a se mover sem dor no dia seguinte. Trabalhamos amplitude, respiração e os padrões básicos: agachar, empurrar, puxar e sustentar o tronco. Intensidade baixa de propósito — a meta da semana 1 é você chegar na semana 2.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "188ec1f",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-week"
+                  },
+                  "elements": [
+                    {
+                      "id": "6e27eee",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"tc-week__meta\"><strong>Semana 2</strong> <span>Dias 8 a 14</span></p>",
+                        "_css_classes": "tc-week__meta-wrap"
+                      }
+                    },
+                    {
+                      "id": "519f8a9",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Força de base",
+                        "header_size": "h3",
+                        "_css_classes": "tc-h3"
+                      }
+                    },
+                    {
+                      "id": "3517264",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Entram as variações mais exigentes dos mesmos movimentos e os primeiros circuitos com tempo controlado. É a semana em que a maioria percebe a diferença ao subir escada.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "a66d30a",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-week"
+                  },
+                  "elements": [
+                    {
+                      "id": "fc065d9",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"tc-week__meta\"><strong>Semana 3</strong> <span>Dias 15 a 21</span></p>",
+                        "_css_classes": "tc-week__meta-wrap"
+                      }
+                    },
+                    {
+                      "id": "df7df94",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Intensidade e condicionamento",
+                        "header_size": "h3",
+                        "_css_classes": "tc-h3"
+                      }
+                    },
+                    {
+                      "id": "c2f594f",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Treinos em formato de circuito, com intervalos mais curtos. Aqui o gasto calórico sobe e o condicionamento cardiovascular melhora sem precisar correr.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "344b9f6",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-week"
+                  },
+                  "elements": [
+                    {
+                      "id": "89e4cc5",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"tc-week__meta\"><strong>Semana 4</strong> <span>Dias 22 a 30</span></p>",
+                        "_css_classes": "tc-week__meta-wrap"
+                      }
+                    },
+                    {
+                      "id": "6d5c680",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Consolidação",
+                        "header_size": "h3",
+                        "_css_classes": "tc-h3"
+                      }
+                    },
+                    {
+                      "id": "50d403b",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Os treinos mais completos do programa, combinando força e condicionamento, e o teste final para comparar com o seu desempenho do dia 1.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "a5a1a9c",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Bônus inclusos",
+                "header_size": "h3",
+                "_css_classes": "tc-h3 tc-h3--center"
+              }
+            },
+            {
+              "id": "8919457",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ul class=\"tc-bonus\"><li><strong>Guia de alimentação simples</strong><span>O que comer antes e depois do treino, sem dieta restritiva e sem contar caloria.</span></li><li><strong>Protocolo de 10 minutos</strong><span>A versão curta de cada treino, para os dias em que o dia desandou.</span></li><li><strong>Calendário de 30 dias imprimível</strong><span>Para marcar cada treino concluído e ver o progresso acumulado.</span></li><li><strong>Rotina de alongamento noturno</strong><span>8 minutos para dormir melhor e reduzir a dor muscular.</span></li></ul>",
+                "_css_classes": "tc-bonus-wrap"
+              }
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "162c2d5",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "_css_classes": "tc-section tc-section--bio"
+      },
+      "elements": [
+        {
+          "id": "32b491a",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "_css_classes": "tc-wrap"
+          },
+          "elements": [
+            {
+              "id": "4f3cf5f",
+              "elType": "container",
+              "settings": {
+                "content_width": "boxed",
+                "_css_classes": "tc-bio"
+              },
+              "elements": [
+                {
+                  "id": "16f7b43",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-bio__art"
+                  },
+                  "elements": [
+                    {
+                      "id": "3380188",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+                          "id": "",
+                          "alt": "Rafael Monteiro, educador físico, em pé com os braços cruzados",
+                          "source": "library"
+                        },
+                        "image_size": "full",
+                        "lazy_load": "yes",
+                        "_css_classes": "tc-bio__img"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "6bc55a4",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-bio__copy"
+                  },
+                  "elements": [
+                    {
+                      "id": "fa6f4fd",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Quem vai te guiar",
+                        "header_size": "span",
+                        "_css_classes": "tc-badge"
+                      }
+                    },
+                    {
+                      "id": "dde6eb8",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Rafael Monteiro",
+                        "header_size": "h2",
+                        "_css_classes": "tc-h2"
+                      }
+                    },
+                    {
+                      "id": "c15e873",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Educador físico · CREF 000000-G/SP · 12 anos de experiência</p>",
+                        "_css_classes": "tc-role"
+                      }
+                    },
+                    {
+                      "id": "a4d622e",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Comecei atendendo em academia e passei anos vendo a mesma cena se repetir: pessoas animadas em janeiro, ausentes em março. O problema nunca foi força de vontade — era um programa que não cabia na vida real de quem trabalha, tem filhos e mora longe.</p><p>Em 2019 passei a atender exclusivamente em domicílio e online. Sem os equipamentos da academia, tive que reconstruir tudo com o que existe dentro de uma casa. O resultado foi um método mais simples e, para a maioria das pessoas, muito mais sustentável.</p><p>O Treino em Casa 30 Dias é esse método, organizado em vídeo. É o que eu passaria para você na primeira consulta, se a gente se encontrasse hoje.</p>"
+                      }
+                    },
+                    {
+                      "id": "884dbe9",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<ul class=\"tc-checks\"><li>Graduado em Educação Física, com especialização em treinamento funcional</li><li>Mais de 4.000 alunos atendidos em programas online desde 2019</li><li>Autor do canal \"Treino Sem Academia\", com 180 mil inscritos</li></ul>",
+                        "_css_classes": "tc-checks"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a2738e4",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "_css_classes": "tc-section tc-section--quotes"
+      },
+      "elements": [
+        {
+          "id": "befbf29",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "_css_classes": "tc-wrap"
+          },
+          "elements": [
+            {
+              "id": "311d83e",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Depoimentos",
+                "header_size": "span",
+                "_css_classes": "tc-badge"
+              }
+            },
+            {
+              "id": "14951f9",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "O que mudou para quem fez os 30 dias",
+                "header_size": "h2",
+                "_css_classes": "tc-h2"
+              }
+            },
+            {
+              "id": "f80cbb3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Depoimentos de exemplo, criados para esta demonstração de portfólio.</p>",
+                "_css_classes": "tc-disclaimer"
+              }
+            },
+            {
+              "id": "db8456e",
+              "elType": "container",
+              "settings": {
+                "content_width": "boxed",
+                "_css_classes": "tc-grid tc-grid--2"
+              },
+              "elements": [
+                {
+                  "id": "a40a9c0",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-quote"
+                  },
+                  "elements": [
+                    {
+                      "id": "f9a3c8f",
+                      "elType": "widget",
+                      "widgetType": "star-rating",
+                      "settings": {
+                        "rating": 5,
+                        "stars": "5",
+                        "star_style": "star_unicode",
+                        "_css_classes": "tc-stars"
+                      }
+                    },
+                    {
+                      "id": "dd1b64a",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<blockquote><p>Eu tinha três assinaturas de academia abandonadas. O que mudou aqui foi o tempo: 20 minutos eu consigo, e aí não tem desculpa. Cheguei no dia 30 pela primeira vez na vida.</p></blockquote>",
+                        "_css_classes": "tc-quote__body"
+                      }
+                    },
+                    {
+                      "id": "c093005",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"tc-quote__who\"><strong>Juliana Ferraz</strong><span>34 anos, analista de dados</span></p>",
+                        "_css_classes": "tc-quote__who-wrap"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "31e90ac",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-quote"
+                  },
+                  "elements": [
+                    {
+                      "id": "878237b",
+                      "elType": "widget",
+                      "widgetType": "star-rating",
+                      "settings": {
+                        "rating": 5,
+                        "stars": "5",
+                        "star_style": "star_unicode",
+                        "_css_classes": "tc-stars"
+                      }
+                    },
+                    {
+                      "id": "6af9d36",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<blockquote><p>Trabalho sentado dez horas por dia e minha lombar vivia travada. Na segunda semana a dor sumiu. Continuo fazendo, já no segundo ciclo.</p></blockquote>",
+                        "_css_classes": "tc-quote__body"
+                      }
+                    },
+                    {
+                      "id": "4e716f1",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"tc-quote__who\"><strong>Marcos Antunes</strong><span>41 anos, motorista de aplicativo</span></p>",
+                        "_css_classes": "tc-quote__who-wrap"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "bfc7797",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-quote"
+                  },
+                  "elements": [
+                    {
+                      "id": "1560a67",
+                      "elType": "widget",
+                      "widgetType": "star-rating",
+                      "settings": {
+                        "rating": 5,
+                        "stars": "5",
+                        "star_style": "star_unicode",
+                        "_css_classes": "tc-stars"
+                      }
+                    },
+                    {
+                      "id": "f8d8421",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<blockquote><p>Moro em apartamento pequeno e achava que não daria. Dá. Faço na sala, entre o sofá e a mesa, e nunca precisei comprar nada.</p></blockquote>",
+                        "_css_classes": "tc-quote__body"
+                      }
+                    },
+                    {
+                      "id": "dc4fddc",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"tc-quote__who\"><strong>Patrícia Lemos</strong><span>29 anos, professora</span></p>",
+                        "_css_classes": "tc-quote__who-wrap"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "4da5e83",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-quote"
+                  },
+                  "elements": [
+                    {
+                      "id": "a33f152",
+                      "elType": "widget",
+                      "widgetType": "star-rating",
+                      "settings": {
+                        "rating": 5,
+                        "stars": "5",
+                        "star_style": "star_unicode",
+                        "_css_classes": "tc-stars"
+                      }
+                    },
+                    {
+                      "id": "86b6b0d",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<blockquote><p>O que me fez continuar foi a progressão. Dava pra sentir que o treino do dia 15 era diferente do dia 5. Não é o mesmo vídeo repetido trinta vezes.</p></blockquote>",
+                        "_css_classes": "tc-quote__body"
+                      }
+                    },
+                    {
+                      "id": "6a2e4c8",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"tc-quote__who\"><strong>Eduardo Nakamura</strong><span>37 anos, desenvolvedor</span></p>",
+                        "_css_classes": "tc-quote__who-wrap"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "be306bb",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "_css_classes": "tc-section tc-section--guarantee"
+      },
+      "elements": [
+        {
+          "id": "dab8d00",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "_css_classes": "tc-wrap"
+          },
+          "elements": [
+            {
+              "id": "f741345",
+              "elType": "container",
+              "settings": {
+                "content_width": "boxed",
+                "_css_classes": "tc-guarantee"
+              },
+              "elements": [
+                {
+                  "id": "85eb29f",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p class=\"tc-seal\">7 dias de garantia incondicional</p>",
+                    "_css_classes": "tc-seal-wrap"
+                  }
+                },
+                {
+                  "id": "13c998b",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "boxed",
+                    "_css_classes": "tc-guarantee__copy"
+                  },
+                  "elements": [
+                    {
+                      "id": "6962c5a",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Risco zero",
+                        "header_size": "span",
+                        "_css_classes": "tc-badge"
+                      }
+                    },
+                    {
+                      "id": "4cda615",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "7 dias para testar. Não gostou, devolvemos tudo.",
+                        "header_size": "h2",
+                        "_css_classes": "tc-h2"
+                      }
+                    },
+                    {
+                      "id": "3051fd0",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Faça os primeiros treinos, leia os bônus, use o material inteiro. Se em até 7 dias você concluir que não é para você, basta um e-mail pedindo o reembolso. Devolvemos o valor integral, sem formulário, sem pergunta e sem precisar justificar. A garantia é obrigatória por lei e nós cumprimos à risca.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "bd64e4d",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "_css_classes": "tc-section tc-section--offer"
+      },
+      "elements": [
+        {
+          "id": "d9ed492",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "_css_classes": "tc-wrap"
+          },
+          "elements": [
+            {
+              "id": "a1a8076",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A oferta",
+                "header_size": "span",
+                "_css_classes": "tc-badge"
+              }
+            },
+            {
+              "id": "851fa31",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tudo o que está incluído",
+                "header_size": "h2",
+                "_css_classes": "tc-h2"
+              }
+            },
+            {
+              "id": "68973ec",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ul class=\"tc-pricelist\"><li><span>Programa completo de 30 treinos em vídeo</span><strong>R$ 297</strong></li><li><span>Guia de alimentação simples</span><strong>R$ 97</strong></li><li><span>Protocolo de 10 minutos</span><strong>R$ 67</strong></li><li><span>Calendário de 30 dias imprimível</span><strong>R$ 27</strong></li><li><span>Rotina de alongamento noturno</span><strong>R$ 47</strong></li><li class=\"tc-pricelist__total\"><span>Valor total</span><strong>R$ 535</strong></li></ul>",
+                "_css_classes": "tc-pricelist-wrap"
+              }
+            },
+            {
+              "id": "4c0eda7",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p class=\"tc-price\"><span>Preço hoje</span><strong>R$ 197</strong><em>ou 12x de R$ 19,54 no cartão</em></p>",
+                "_css_classes": "tc-price-wrap"
+              }
+            },
+            {
+              "id": "2f86762",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Garantir minha vaga por R$ 197",
+                "link": {
+                  "url": "https://pay.hotmart.com/EXEMPLO-DEMO",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "_css_classes": "tc-btn tc-btn--primary tc-btn--lg"
+              }
+            },
+            {
+              "id": "12fe11d",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<ul class=\"tc-checks tc-checks--light\"><li>Acesso imediato após a confirmação do pagamento</li><li>Pagamento único — não é assinatura, não renova</li><li>Compra processada pela Hotmart, em ambiente seguro</li></ul>",
+                "_css_classes": "tc-checks tc-checks--light"
+              }
+            },
+            {
+              "id": "f675ad7",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>O preço de R$ 197 vale para esta turma. O valor cheio volta a R$ 297 no próximo lote.</p>",
+                "_css_classes": "tc-note tc-note--light"
+              }
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "4a77ccb",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "_css_classes": "tc-section tc-section--faq"
+      },
+      "elements": [
+        {
+          "id": "6700310",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "_css_classes": "tc-wrap"
+          },
+          "elements": [
+            {
+              "id": "a0dc808",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Dúvidas",
+                "header_size": "span",
+                "_css_classes": "tc-badge"
+              }
+            },
+            {
+              "id": "84541c3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Perguntas frequentes",
+                "header_size": "h2",
+                "_css_classes": "tc-h2"
+              }
+            },
+            {
+              "id": "8388955",
+              "elType": "widget",
+              "widgetType": "accordion",
+              "settings": {
+                "tabs": [
+                  {
+                    "_id": "67cbb7e",
+                    "tab_title": "Nunca treinei na vida. Serve para mim?",
+                    "tab_content": "<p>Serve, e a primeira semana existe justamente por isso. Todos os exercícios têm a versão iniciante demonstrada, e a progressão só aumenta quando o movimento básico já está confortável.</p>"
+                  },
+                  {
+                    "_id": "4b43539",
+                    "tab_title": "Preciso comprar algum equipamento?",
+                    "tab_content": "<p>Não. Os 30 treinos usam o peso do corpo e, em alguns exercícios, uma cadeira comum. Se você tiver um colchonete, fica mais confortável, mas não é obrigatório.</p>"
+                  },
+                  {
+                    "_id": "2ebaef4",
+                    "tab_title": "Quanto espaço eu preciso?",
+                    "tab_content": "<p>O espaço de um colchonete, cerca de 2 metros por 1 metro. Todos os treinos foram gravados em um ambiente pequeno de propósito.</p>"
+                  },
+                  {
+                    "_id": "12328af",
+                    "tab_title": "Por quanto tempo tenho acesso?",
+                    "tab_content": "<p>O acesso é vitalício. Você paga uma vez e assiste quantas vezes quiser, inclusive para repetir o ciclo de 30 dias mais adiante.</p>"
+                  },
+                  {
+                    "_id": "f5aa269",
+                    "tab_title": "Em quais aparelhos consigo assistir?",
+                    "tab_content": "<p>Celular, tablet, computador e TV, pelo aplicativo da Hotmart ou pelo navegador. Dá para baixar os vídeos no aplicativo e treinar sem internet.</p>"
+                  },
+                  {
+                    "_id": "d921c24",
+                    "tab_title": "Tenho uma lesão ou problema de saúde. Posso fazer?",
+                    "tab_content": "<p>Consulte o seu médico antes de começar — isso vale para qualquer programa de exercício. O material indica adaptações para as limitações mais comuns, mas não substitui avaliação profissional individual.</p>"
+                  },
+                  {
+                    "_id": "bc995df",
+                    "tab_title": "E se eu perder um dia?",
+                    "tab_content": "<p>Nada acontece. O programa é sequencial, não diário: você retoma do ponto onde parou. O calendário de acompanhamento serve para isso.</p>"
+                  },
+                  {
+                    "_id": "a010f9a",
+                    "tab_title": "Como funciona o reembolso?",
+                    "tab_content": "<p>Você envia um e-mail dentro dos 7 dias e a Hotmart devolve o valor integral. Não pedimos justificativa e não há etapa de retenção.</p>"
+                  }
+                ],
+                "faq_schema": "yes",
+                "_css_classes": "tc-faq"
+              }
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "9f4572c",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "_css_classes": "tc-section tc-section--closing"
+      },
+      "elements": [
+        {
+          "id": "bbcdd71",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "_css_classes": "tc-wrap"
+          },
+          "elements": [
+            {
+              "id": "2def686",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Trinta dias a partir de hoje, você vai agradecer",
+                "header_size": "h2",
+                "_css_classes": "tc-h2"
+              }
+            },
+            {
+              "id": "1167041",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Daqui a um mês, ou você terá 30 treinos feitos ou mais uma tentativa abandonada para contar. A diferença entre as duas versões começa com o treino de hoje, que leva 20 minutos.</p>",
+                "_css_classes": "tc-lead"
+              }
+            },
+            {
+              "id": "f4de9fb",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Começar agora por R$ 197",
+                "link": {
+                  "url": "https://pay.hotmart.com/EXEMPLO-DEMO",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "_css_classes": "tc-btn tc-btn--primary tc-btn--lg"
+              }
+            },
+            {
+              "id": "d8563b6",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Tenho uma dúvida antes de comprar",
+                "link": {
+                  "url": "https://wa.me/5511999999999?text=Ol%C3%A1!%20Vi%20a%20p%C3%A1gina%20do%20Treino%20em%20Casa%2030%20Dias%20e%20queria%20tirar%20uma%20d%C3%BAvida.",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "_css_classes": "tc-btn tc-btn--ghost"
+              }
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "f41318d",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "_css_classes": "tc-section tc-section--footer"
+      },
+      "elements": [
+        {
+          "id": "109b7d3",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "_css_classes": "tc-wrap"
+          },
+          "elements": [
+            {
+              "id": "82bd0e7",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Esta é uma página de demonstração criada para portfólio. \"Treino em Casa 30 Dias\" é um produto fictício, o instrutor Rafael Monteiro é um personagem e os depoimentos são exemplos ilustrativos. Nenhuma venda é processada aqui.</p>",
+                "_css_classes": "tc-demo-notice"
+              }
+            },
+            {
+              "id": "6634aa2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p class=\"tc-footer__links\"><a href=\"#\">Política de Privacidade</a> <i>&middot;</i> <a href=\"#\">Termos de Uso</a> <i>&middot;</i> <a href=\"#\">Contato</a></p>",
+                "_css_classes": "tc-footer__links-wrap"
+              }
+            },
+            {
+              "id": "49ac45d",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Desenvolvido por Bruno Bigelli · WordPress e Elementor</p>",
+                "_css_classes": "tc-credit"
+              }
+            },
+            {
+              "id": "2d23e18",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Resultados variam de pessoa para pessoa e dependem de dedicação individual, condição física inicial e alimentação. Este conteúdo não substitui orientação médica. Consulte um profissional de saúde antes de iniciar qualquer programa de exercícios.</p>",
+                "_css_classes": "tc-legal"
+              }
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Landing - Treino em Casa 30 Dias",
+  "type": "page"
+}

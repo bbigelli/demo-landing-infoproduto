@@ -1,0 +1,15 @@
+# Build output is committed on purpose (the .json is the deliverable),
+# but local WordPress artifacts and binaries are not.
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# LocalWP / WordPress site files -- never commit a whole WP install
+wp-content/
+wp-config.php
+*.sql
+*.sql.gz
+
+# Screenshots are heavy; keep only the curated ones under assets/
+assets/raw/
